@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebríček najlepších filmov</title>
+    <style>
+        th {
+            color: rgb(218, 2, 2);
+            font-weight: bolder;
+            font-family: fantasy;
+            border: 2px dashed black;
+            background-color: rgb(195, 223, 241);
+        }
+        
+        .poradie {
+            text-align: right;
+        }
+        
+        .nazov {
+            text-align: center;
+        }
+        
+        .nad92 {
+            color: rgb(83, 119, 12);
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .DruhyRiadok {
+            background-color: rgb(255, 219, 121);
+        }
+        
+        body {
+            background-color: rgb(237, 238, 255);
+        }
+        
+        a {
+            color: rgb(180, 3, 3);
+            text-align: left;
+        }
+        
+        a:hover {
+            color: black;
+        }
+        
+        img {
+            float: left;
+            margin-right: 15px;
+            width: 450px;
+            height: 300px;
+            margin-bottom: 30px;
+            margin-left: 20px;
+        }
+        
+        p {
+            justify-content: left;
+        }
+        
+        table {
+            border: 10px dashed black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        td {
+            border: 2px dotted black;
+        }
+        
+        tr {
+            border: 2px dotted black;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .podmaz {
+            visibility: hidden;
+        }
+        
+        .tooltip {
+            position: relative;
+        }
+        
+        .tooltip span {
+            visibility: hidden;
+            width: 300px;
+            background-color: white;
+            stroke: black;
+            color: black;
+            z-index: 1;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 4px;
+            position: absolute;
+        }
+        
+        .tooltip:hover span {
+            visibility: visible;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 15px dotted burlywood;
+            margin-top: 12px;
+            margin-left: 32px;
+            padding: 8px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: oblique;
+        }
+        
+        .tooltip span img {
+            float: left;
+            width: 300px;
+            height: 200px;
+            margin: 0px 8px 8px 0;
+        }
+        
+        nav {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 35px;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        a {
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <audio id="podmaz" src="DiggingThemGrooves - mixkit.mp3"></audio>
+    <nav>
+        <ul>
+            <li><a style="color:darkturquoise; background-color: rgb(0, 0, 0)" href="index.html">Domov</a></li>
+            <li><a style="color:rgb(197, 233, 255); background-color: rgb(0, 0, 0)" href="Pridaj-recenziu.html">Pridaj recenziu</a></li>
+        </ul>
+    </nav>
+    <br> <br>
+    <h1>Rebríček najlepších filmov</h1>
+    <br>
+    <table>
+        <tr>
+            <th>Poradie</th>
+            <th>Názov filmu</th>
+            <th>Rok vydania</th>
+            <th>Hodnotenie v percentách</th>
+        </tr>
+        <tr class="DruhyRiadok ">
+            <td class="poradie">1.</td>
+            <td class="nazov">
+                <a class="tooltip">Vykúpenie z väznice Shawshank <span> <img src="ShawshankRedemption.png " alt="Prvy obrazok ">Hlavní hrdinovia: Red a Andy</span></a> </td>
+            <td>1994</td>
+            <td class="nad92">95,3 &#37;</td>
+        </tr>
+        <tr>
+            <td class="poradie ">2.</td>
+            <td class="nazov ">
+                <a class="tooltip">Forrest Gump<span> <img src="ForrestGump.png" alt="Druhy obrazok ">Hlavní hrdina: Forrest Gump</span></a></td>
+            <td>1994</td>
+            <td class="nad92">94,5 &#37;</td>
+        </tr>
+        <tr class="DruhyRiadok ">
+            <td class="poradie ">3.</td>
+            <td class="nazov ">
+                <a class="tooltip">Zelená míľa<span> <img src="TheGreenMile.png" alt="Treti obrazok ">Hlavní hrdinovia: Paul a John</span></a></td>
+            <td>1999</td>
+            <td class="nad92">92,9 &#37;</td>
+        </tr>
+        <tr>
+            <td class="poradie ">4.</td>
+            <td class="nazov ">
+                <a class="tooltip">Sedem<span> <img src="Seven.png" alt="Stvrty ">Hlavní hrdinovia: William a David</span></a></td>
+            <td>1995</td>
+            <td class="nad92">92,5 &#37;</td>
+        </tr>
+        <tr class="DruhyRiadok ">
+            <td class="poradie ">5.</td>
+            <td class="nazov ">
+                <a class="tooltip">Prelet nad kukučím hniezdom<span> <img src="OneFlewOverTheCuckoosNest.png" alt="Piaty obrazok ">Hlavní hrdina: Randle</span></a></td>
+            <td>1975</td>
+            <td class="nad92">92,4 &#37;</td>
+        </tr>
+        <tr>
+            <td class="poradie ">6.</td>
+            <td class="nazov ">Schindlerov zoznam</td>
+            <td>1993</td>
+            <td class="nad92">92,3 &#37;</td>
+        </tr>
+        <tr class="DruhyRiadok ">
+            <td class="poradie ">7.</td>
+            <td class="nazov">Krstný otec</td>
+            <td>1972</td>
+            <td>91,8 &#37;</td>
+        </tr>
+        <tr>
+            <td class="poradie ">8.</td>
+            <td class="nazov ">Dvanásť rozhnevaných mužov</td>
+            <td>1957</td>
+            <td>91,4 &#37;</td>
+        </tr>
+        <tr class="DruhyRiadok ">
+            <td class="poradie ">9.</td>
+            <td class="nazov ">Nedotknuteľní</td>
+            <td>2011</td>
+            <td>91,3 &#37;</td>
+        </tr>
+        <tr>
+            <td class="poradie ">10.</td>
+            <td class="nazov ">Pelíšky</td>
+            <td>1999</td>
+            <td>91,2 &#37;</td>
+        </tr>
+        <tr class="DruhyRiadok ">
+            <td class="poradie ">11.</td>
+            <td class="nazov ">Terminátor 2</td>
+            <td>1991</td>
+            <td>90,2 &#37;</td>
+        </tr>
+        <tr>
+            <td class="poradie ">12.</td>
+            <td class="nazov ">Pulp fiction</td>
+            <td>1994</td>
+            <td>90,7 &#37;</td>
+        </tr>
+        <tr class="DruhyRiadok ">
+            <td class="poradie ">13.</td>
+            <td class="nazov ">Pán prsteňov: Spoločenstvo prsteňa</td>
+            <td>2001</td>
+            <td>90,6 &#37;</td>
+        </tr>
+        <tr>
+            <td class="poradie ">14.</td>
+            <td class="nazov ">Mlčanie jahniat</td>
+            <td>1991</td>
+            <td>90,5 &#37;</td>
+        </tr>
+        <tr class="DruhyRiadok ">
+            <td class="poradie ">15.</td>
+            <td class="nazov ">Vtedy na Západe</td>
+            <td>1968</td>
+            <td>90,5 &#37;</td>
+        </tr>
+        <tr>
+            <td class="poradie ">16.</td>
+            <td class="nazov ">Temný rytier</td>
+            <td>2008</td>
+            <td>90,4 &#37;</td>
+        </tr>
+        <tr class="DruhyRiadok ">
+            <td class="poradie ">17.</td>
+            <td class="nazov ">Gran Torino</td>
+            <td>2008</td>
+            <td>90,3 &#37;</td>
+        </tr>
+        <tr>
+            <td class="poradie ">18.</td>
+            <td class="nazov ">Matrix</td>
+            <td>1999</td>
+            <td>90,2 &#37;</td>
+        </tr>
+        <tr class="DruhyRiadok ">
+            <td class="poradie ">19.</td>
+            <td class="nazov ">Dobrý, zlý a škaredý</td>
+            <td>1966</td>
+            <td>90,0 &#37;</td>
+        </tr>
+        <tr>
+            <td class="poradie ">20.</td>
+            <td class="nazov ">Rain Man</td>
+            <td>1988</td>
+            <td>89,9 &#37;</td>
+        </tr>
+    </table>
+    <br><br>
+    <h1>TOP FILM: Vykúpenie z väznice Shawshank</h1>
+    <img src="ShawshankRedemption.png " alt="Obrázok top filmu " title="Red a Andy ">
+    <br> <br><br><br>
+    <p>Mladého bankára Andyho Dufresneho odsúdia za vraždu svojej ženy a jej milenca. Čaká naňho dvojnásobný doživotný trest v obávanej väznici Shawshank. Pri snahe prispôsobiť sa novému životu sa zblíži s Redom, ktorý si tu odpykáva svoj doživotný trest
+        už dvadsať rokov. Silu prežiť toto peklo Andy čerpá z tajného sna a nádeje, že sa raz dostane na slobodu...</p>
+    <script>
+        document.getElementById("podmaz ").play();
+    </script>
+    <br> <br> <br><br><br><br>
+    <footer>
+        <p> <i> © &nbsp; All rights reserved</i></p>
+    </footer>
+</body>
+
+</html>
